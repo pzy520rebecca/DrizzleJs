@@ -1,0 +1,20 @@
+{{#module}}
+    <div class="dynamic">
+        <div data-region="header"></div>
+        <div data-region="main"></div>
+    </div>
+{{/module}}
+{{#view "header"}}
+    <h1 class="header-dynamic">声明式渲染</h1>
+{{/view}}
+{{#view "main"}}
+    <div>
+        <button id="module1-tab">module1</button>
+        <button id="module2-tab">module2 </button>
+        {{#if flag}}
+            <div data-dynamic-key="page1"></div>
+        {{else}}
+            <div data-dynamic-key="page2"></div>
+        {{/if}}
+    </div>
+{{/view}}

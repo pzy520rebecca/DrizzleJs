@@ -1,0 +1,20 @@
+{
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "modules":false,
+          "targets": {
+            "browsers":["ie >= 7"]
+          },
+          "useBuiltIns":"usage",
+          "debug":true,
+          "loose":true
+        }
+      ]
+    ],
+    "plugins":[
+      "@babel/plugin-transform-runtime",
+      "@babel/plugin-transform-modules-umd"
+    ]
+  }

@@ -1,0 +1,33 @@
+#!handlebars
+module
+    .list
+        div(data-region='main')
+        div(data-region='pagination')
+view('main')
+    h1 我是list
+    .list-header
+        .list-search
+            input#new-task.new-task(type="text" placeholder="姓名" autocomplete="off" data-name="input")
+            button#clickSearch.btn-c.m-10(data-name="button") 查询
+            button#add.btn-c 新增
+    ul.title-list
+        li 
+            span 序号
+        li
+            span 姓名
+        li
+            span 性别
+            input#sexcheck(checked='checked')&if(showMan)(type="checkbox")
+            span 男
+        li
+            span 出生日期       
+    ul.info-list
+        each(infoData)
+            li.list-item
+                .id > echo(id)                                     
+                .name > echo(name)
+                .sex > echo(sex)
+                .birthday > echo(birthday) + button.btn-c.del(id="destroy-" + id data-name="id" data-value=id) 删除  
+    #dialog-box          
+view('pagination')
+    #pager-wrap.pagerbox.pagination           

@@ -1,0 +1,12 @@
+{{#module}}
+    <div class="video">
+        <div data-region="main"></div>
+    </div>
+
+{{/module}}
+{{#view 'main'}}
+    <h1 class="brand-title" ><span>视频模块</span> <span id="back">返回</span></h1>
+    <video id="player" class="fullScreen-content video-js vjs-default-skin vjs-big-play-centered vjs-skin-hotdog-stand ttop" preload="auto">
+        <source src={{url}} type={{state.type}}>
+    </video>
+{{/view}}

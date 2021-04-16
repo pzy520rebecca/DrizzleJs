@@ -1,0 +1,9 @@
+#!handlebars
+module
+    div.header(data-region="main")
+view('main')
+    h1.title DRIZZLE DEMOS
+    ul.ul-list
+        each(navData)
+            li.item 
+                a.pure-button(href="#/" + path) > echo(name)

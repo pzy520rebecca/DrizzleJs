@@ -1,0 +1,6 @@
+#!handlebars
+module
+    div.page-2(data-region="main")
+view('main')
+    div#echars2.echars 
+    

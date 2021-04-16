@@ -1,0 +1,16 @@
+#!handlebars
+module
+    .dynamic
+        div(data-region='header')
+        div(data-region='main')
+
+view('header')
+    h1.header-dynamic 声明式渲染
+view('main')
+    div
+        button#module1-tab module1
+        button#module2-tab module2 
+        if(flag)
+            div(data-dynamic-key='page1') 
+        else
+            div(data-dynamic-key='page2')

@@ -1,0 +1,85 @@
+{
+  "navList": [
+    {
+      "name": "首页",
+      "path": "list"
+    },
+    {
+      "name": "声明式渲染",
+      "path": "dynamic"
+    },
+    {
+      "name": "二维码",
+      "path": "qrcode"
+    },
+    {
+      "name": "子路由",
+      "path": "routechild"
+    }
+  ],
+  "infoList": [
+    {
+      "name": "ddd",
+      "sex": "女",
+      "id": 19,
+      "birthday": "1996-03-12"
+    },
+    {
+      "name": "www",
+      "sex": "男",
+      "id": 20,
+      "birthday": "1996-08-15"
+    },
+    {
+      "name": "vivo",
+      "age": "",
+      "sex": "男",
+      "id": 22,
+      "flag": true,
+      "checked": false,
+      "birthday": "2021-4-15"
+    },
+    {
+      "name": "小米",
+      "age": "",
+      "sex": "男",
+      "id": 23,
+      "flag": true,
+      "checked": false,
+      "birthday": 1618468514558
+    },
+    {
+      "name": "lll",
+      "sex": "女",
+      "id": 24,
+      "birthday": "1995-03-23"
+    },
+    {
+      "name": "ttt",
+      "sex": "女",
+      "id": 25,
+      "birthday": "1996-03-12"
+    },
+    {
+      "name": "eee",
+      "sex": "男",
+      "id": 26,
+      "birthday": "1996-08-15"
+    },
+    {
+      "name": "bbb",
+      "sex": "女",
+      "id": 27,
+      "birthday": "1995-03-23"
+    },
+    {
+      "name": "大大大",
+      "age": "",
+      "sex": "男",
+      "id": 12,
+      "flag": true,
+      "checked": false,
+      "birthday": "2021-4-15"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{{#module}}
+    <div class="list">
+        <div data-region="main"></div>
+        <div data-region="pagination"></div>
+    </div>
+{{/module}}
+{{#view "main"}}
+    <h1>我是list</h1>
+    <div class="list-header">
+        <div class="list-search">
+            <input id="new-task" class="new-task" type="text" placeholder="姓名" autocomplete="off" data-name="input"/>
+            <button id="clickSearch" class="btn-c m-10" data-name="button">查询</button>
+            <button id="add" class="btn-c">新增</button>
+        </div>
+    </div>
+    <ul class="title-list">
+        <li>
+            <span>序号</span>
+        </li>
+        <li>
+            <span>姓名</span>
+        </li>
+        <li>
+            <span>性别</span>
+            <input id="sexcheck" {{#if showMan}} checked{{/if}} type="checkbox"/>
+            <span>男</span>
+        </li>
+        <li>
+            <span>出生日期       </span>
+        </li>
+    </ul>
+    <ul class="info-list">
+        {{#each infoData}}
+            <li class="list-item">
+                <div class="id">{{id}}</div>
+                <div class="name">{{name}}</div>
+                <div class="sex">{{sex}}</div>
+                <div class="birthday">{{birthday}}<button class="btn-c del" id="destroy-{{id}}" data-name="id" data-value="{{id}}">删除  </button></div>
+            </li>
+        {{/each}}
+    </ul>
+    <div id="dialog-box">         </div>
+{{/view}}
+{{#view "pagination"}}
+    <div id="pager-wrap" class="pagerbox pagination">          </div>
+{{/view}}

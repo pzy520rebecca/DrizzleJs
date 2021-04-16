@@ -1,0 +1,13 @@
+{{#module}}
+    <div class="header" data-region="main"></div>
+{{/module}}
+{{#view "main"}}
+    <h1 class="title">DRIZZLE DEMOS</h1>
+    <ul class="ul-list">
+        {{#each navData}}
+            <li class="item">
+                <a class="pure-button" href="#/{{path}}">{{name}}</a>
+            </li>
+        {{/each}}
+    </ul>
+{{/view}}
